@@ -1,0 +1,7 @@
+<h1> confirmation de votre adresse email</h1>
+<p>
+Pour activer votre compte ,merci de confirmer votre adresse email en cliquant sur le lien suivant :
+<a href="{{ absolute_url(path('app_verify_account',{'id':userID,'token':registrationToken} )) }}">Confirmer vote adresse email</a>
+{#ce lien expire le {{TokenLifeTime}}.#}
+</p>
+<img src="{{email.image('@images/footer.png')}}" alt="footer email">
